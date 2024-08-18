@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="article.css">
+    <meta name="robots" content="index, follow"> 
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Aryan Nagar - Articles</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <div id="containerone">
+        <button id="containerone_button" onclick="window.location.href='index.html'"><ion-icon name="arrow-back-outline"></ion-icon>Home</button>
+        <h1 id="containerone_heading">Articles</h1>
+        <input id="containerone_input" type="search" placeholder="Search for an Article" name="search">
+    </div>
+
+    <div id="containertwo">
+        <div id="articlespan" onclick="window.location.href='articles/articleone.html'" class="articlespanlinks" >
+            <a href="articles/articleone.html">What's wrong with Linux, and why do we need to fix it?</a>
+            <p>12 oct 2023</p>
+        </div>
+        <div id="articlespan" onclick="window.location.href='articles/articletwo.html'" class="articlespanlinks" >
+            <a href="articles/articletwo.html">The importance of sandboxing in operating systems.</a>
+            <p>16 nov 2023</p>
+        </div>
+        <div id="articlespan" onclick="window.location.href='articles/articlethree.html'" class="articlespanlinks" >
+            <a href="articles/articlethree.html">Why doesn't Microsoft have good consumer applications?</a>
+            <p>09 dec 2023</p>
+        </div>
+        <div id="articlespan" onclick="window.location.href='articles/articlefour.html'" class="articlespanlinks" >
+            <a href="articles/articlefour.html">My Minimal VS Code Setup.</a>
+            <p>24 jan 2024</p>
+        </div>
+        <div id="articlespan" onclick="window.location.href='articles/articlefive.html'" class="articlespanlinks" >
+            <a href="articles/articlefive.html">Why are these applications irreplaceable?</a>
+            <p>11 feb 2024</p>
+        </div>
+        <div id="articlespan"  onclick="window.location.href='articles/articlesix.html'" class="articlespanlinks" >
+            <a href="articles/articlesix.html">Electron JS builds can be messy, but they are still useful.</a>
+            <p>20 mar 2024</p>
+        </div>
+        <div id="articlespan" onclick="window.location.href='articles/articleseven.html'" class="articlespanlinks" >
+            <a href="articles/articleseven.html">How to get out of coding tutorial hell?</a>
+            <p>03 apr 2024</p>
+        </div>
+        <div id="articlespan" onclick="window.location.href='articles/articleeight.html'" class="articlespanlinks" >
+            <a href="articles/articleeight.html">The Sun: Our only energy source, or one step back to extinction?</a>
+            <p>14 may 2024</p>
+        </div>
+        <div id="articlespan" onclick="window.location.href='articles/articleeight.html'" class="articlespanlinks" >
+            <a href="articles/articleeight.html">Why should humans be a multiplanetary species?</a>
+            <p>28 jun 2024</p>
+        </div>
+        <div id="articlespan" onclick="window.location.href='articles/articleeight.html'" class="articlespanlinks" >
+            <a href="articles/articleeight.html">The Ostrich Algorithm.</a>
+            <p>18 july 2024</p>
+        </div>
+        <div id="articlespan" onclick="window.location.href='articles/articleeight.html'" class="articlespanlinks">
+            <a href="articles/articleeight.html">Is being a cyborg the only way to achieve immortality?</a>
+            <p>15 aug 2024</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Aryan Nagar ©️ 2024</p>
+    </footer>
+
+
+    <script>
+    document.getElementById('containerone_input').addEventListener('input', function() {
+        // Get the search term
+        let searchTerm = this.value.toLowerCase();
+    
+        // Get all the links with the class name 'articlespanlinks'
+        let links = document.querySelectorAll('.articlespanlinks');
+    
+        // Loop through all links and check if they match the search term
+        links.forEach(function(link) {
+            // Check if the link's text contains the search term
+            if (link.textContent.toLowerCase().includes(searchTerm)) {
+                link.style.display = ''; // Show the link
+            } else {
+                link.style.display = 'none'; // Hide the link
+            }
+        });
+    }); 
+    </script>
+
+
+</body>
+</html>
