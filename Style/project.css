@@ -12,7 +12,7 @@
 }
 ::-webkit-scrollbar-thumb {
     width: 5px;
-    background-color: #888;
+    background-color: #222;
     border-radius: 10px;
 }
 *{
@@ -27,4 +27,167 @@ html {
 }
 body {
     background-color: var(--fadeblack);
+}
+header {
+    margin: 0px auto 100px;
+    width: calc(100% - 100px);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+header h1{
+    margin: 50px auto 20px;
+    font-size: 10vw;
+    font-weight: 900;
+    color: var(--accent);
+}
+header button {
+    margin: 0px auto;
+    padding: 10px 20px;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 15px;
+    font-family: "Ubuntu Mono";
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: var(--darkgrey);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+ion-icon {
+    color: var(--paperwhite);
+    margin: 0px 15px 0px 0px;
+    font-size: 1.2rem;
+}
+#tokyo {
+    display: flex;
+    margin: 50px auto;
+    width: fit-content;
+    height: fit-content;
+}
+#tokyo p {
+    margin: 0px 5px 0px 5px;
+    padding: 10px 20px;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 50px;
+    background-color: #101010;
+    font-family: "Ubuntu Mono";
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #ffb1b1;
+}
+#application-card-container {
+    margin: 0px auto;
+    width: 930px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+}
+#application-card {
+    margin: 0px 5px 10px 5px;
+    padding: 20px;
+    width: 300px;
+    height: fit-content;
+    background-color: var(--darkgrey);
+    border-radius: 10px;
+}
+#application-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+#application-card h3 {
+    margin: 30px 0px 0px 0px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.2rem;
+}
+#application-card p {
+    margin: 15px 0px 0px 0px;
+    width: fit-content;
+    max-width: 90%;
+    height: fit-content;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    color: #ababab;
+}
+#application-card button {
+    margin: 30px 0px 0px 0px;
+    padding: 10px 20px;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 5px;
+    font-family: 0.9rem;
+    font-weight: 600;
+    background-color: #212121;
+    cursor: pointer;
+}
+#grain {
+    margin: 50px auto;
+    width: 910px;
+    height: fit-content;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+#grain ul {
+    margin: 0px 50px 0px 0px;
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+#grain ul li {
+    margin: 10px 0px;
+    width: fit-content;
+    height: fit-content;
+    list-style: none;
+}
+#grain ul li p {
+    margin: 0px 0px 20px 0px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    font-weight: 600;
+}
+#grain ul li a {
+    padding: 5px 0px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.9rem;
+    color: #ababab;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+#grain ul li a:hover {
+    border-bottom: 1px solid #222222;
+}
+footer {
+    padding: 50px 0px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p {
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.9rem;
+    color: #666666;
+    font-family: "Ubuntu Mono";
 }
